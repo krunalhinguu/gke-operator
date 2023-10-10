@@ -7,6 +7,11 @@ replace (
 	k8s.io/client-go => github.com/krunalhinguu/client-go v1.29.0-rancher1
 )
 
+// replace (
+// 	github.com/rancher/wrangler => github.com/rancher/wrangler v1.1.1-0.20230831050635-df1bd5aae9df
+// 	k8s.io/client-go => k8s.io/client-go v0.27.5
+// )
+
 require (
 	github.com/golang/mock v1.6.0
 	github.com/onsi/ginkgo/v2 v2.15.0
