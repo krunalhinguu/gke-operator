@@ -1,8 +1,11 @@
 module github.com/rancher/gke-operator
 
-go 1.20
+go 1.21
 
-replace k8s.io/client-go => k8s.io/client-go v0.28.6
+replace (
+	github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
+	k8s.io/client-go => github.com/krunalhinguu/client-go v1.29.0-rancher1
+)
 
 require (
 	github.com/golang/mock v1.6.0
@@ -15,8 +18,8 @@ require (
 	golang.org/x/net v0.21.0
 	golang.org/x/oauth2 v0.16.0
 	google.golang.org/api v0.153.0
-	k8s.io/api v0.28.6
-	k8s.io/apimachinery v0.28.6
+	k8s.io/api v0.29.0
+	k8s.io/apimachinery v0.29.0
 	k8s.io/client-go v12.0.0+incompatible
 )
 
