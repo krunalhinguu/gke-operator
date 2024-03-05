@@ -2,10 +2,9 @@ module github.com/rancher/gke-operator
 
 go 1.21
 
-replace (
-	github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
-	k8s.io/client-go => github.com/krunalhinguu/client-go v1.29.0-rancher1
-)
+replace github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
+
+replace k8s.io/client-go => k8s.io/client-go v0.29.0
 
 require (
 	github.com/golang/mock v1.6.0
